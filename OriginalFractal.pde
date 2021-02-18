@@ -1,6 +1,6 @@
 
 void setup() {
-  size(800,800);
+  size(400,400);
   background(255,255,255);
   
   fractal(200,200,400);
@@ -10,14 +10,12 @@ void setup() {
   
   
 }
-void draw() {
-  
-}
+
 public void fractal(float x,float y,float size) {
   fill(255-size/3,255-size/3,255-size/3);
   circle(x,y,size);
   
-  //System.out.println(counter+":"+size);
+  
   //circle(x,y+(y/2),size-(size/2));
   //circle(x-(x/2),y-(y/4),size-(size/2));
   //circle(x+(x/2),y-(y/4),size-(size/2));
