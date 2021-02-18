@@ -4,12 +4,12 @@ void setup() {
   background(255,255,255);
   
   
+  
+}
+void draw() {
   fractal(200,200,400);
   fractal(-82.84,-82.84,400);
   fractal(482.84,-82.84,400);
-}
-void draw() {
-  //not used
 }
 public void fractal(float x,float y,float size) {
   fill(255-size/3,255-size/3,255-size/3);
