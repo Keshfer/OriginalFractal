@@ -12,23 +12,23 @@ public void setup() {
   
 }
 
-public void fractal(float x,float y,float size) {
+public void fractal(float x,float y,float siz) {
   fill(255-size/3,255-size/3,255-size/3);
-  circle(x,y,size);
+  ellipse(x,y,siz,siz);
   
   
-  //circle(x,y+(y/2),size-(size/2));
-  //circle(x-(x/2),y-(y/4),size-(size/2));
-  //circle(x+(x/2),y-(y/4),size-(size/2));
+  //circle(x,y+(y/2),siz-(siz/2));
+  //circle(x-(x/2),y-(y/4),siz-(siz/2));
+  //circle(x+(x/2),y-(y/4),siz-(siz/2));
   if(size >=10) {
     //down circle
-    fill(255-size/3,255-size/3,255-size/3);
-    fractal(x,y+(size/3.8),size/2.3);
+    fill(255-siz/3,255-siz/3,255-siz/3);
+    fractal(x,y+(siz/3.8),siz/2.3);
     //right circle
-    fill(255-size/3,255-size/3,255-size/3);
-    fractal(x+(size/4.5),y-(size/8.5),size/2.3);
+    fill(255-siz/3,255-siz/3,255-siz/3);
+    fractal(x+(siz/4.5),y-(siz/8.5),siz/2.3);
     //left circle
-    fill(255-size/3,255-size/3,255-size/3);
-    fractal(x-(size/4.5),y-(size/8.5),size/2.3);
+    fill(255-siz/3,255-siz/3,255-siz/3);
+    fractal(x-(siz/4.5),y-(siz/8.5),siz/2.3);
   } 
 }
